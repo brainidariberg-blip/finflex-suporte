@@ -1,0 +1,12 @@
+{
+  "name": "finflex-suporte",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Página pública de suporte do aplicativo FinFlex",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
