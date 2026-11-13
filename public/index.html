@@ -8,91 +8,45 @@
   <title>FinFlex | Suporte</title>
   <style>
     :root{--orange:#ff6b00;--orange-soft:#fff1e7;--ink:#10213b;--muted:#65758b;--line:#e7ebf0;--bg:#f7f8fa;--white:#fff;--success:#0b9f51}
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}
     body{margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
     .wrap{max-width:980px;margin:0 auto;padding:0 24px}
     header{background:var(--white);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
     .nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}
     .brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:22px}
-    .mark{width:40px;height:40px;border-radius:13px;background:var(--orange);color:white;display:grid;place-items:center;font-weight:900;box-shadow:0 8px 22px rgba(255,107,0,.22)}
-    .nav a{color:var(--ink);text-decoration:none;font-weight:700}
-    .hero{padding:72px 0 40px}
-    .eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--orange);background:var(--orange-soft);padding:8px 12px;border-radius:999px;font-weight:800;font-size:14px}
+    .mark{width:40px;height:40px;border-radius:13px;background:var(--orange);color:white;display:grid;place-items:center;font-weight:900}
+    nav{display:flex;gap:22px}.nav a{color:var(--ink);text-decoration:none;font-weight:700}
+    .hero{padding:72px 0 40px}.eyebrow{display:inline-flex;color:var(--orange);background:var(--orange-soft);padding:8px 12px;border-radius:999px;font-weight:800;font-size:14px}
     h1{font-size:clamp(38px,6vw,64px);line-height:1.04;margin:18px 0;letter-spacing:-2px}
     .lead{font-size:20px;color:var(--muted);max-width:720px;margin:0}
     .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;padding:28px 0 54px}
     .card{background:var(--white);border:1px solid var(--line);border-radius:22px;padding:26px;box-shadow:0 10px 28px rgba(16,33,59,.05)}
-    .card h2{font-size:20px;margin:0 0 10px}
-    .card p{margin:0;color:var(--muted)}
-    .icon{width:44px;height:44px;border-radius:14px;background:var(--orange-soft);color:var(--orange);display:grid;place-items:center;font-size:22px;margin-bottom:18px}
+    .card h2{font-size:20px;margin:0 0 10px}.card p{margin:0;color:var(--muted)}
+    .icon{width:44px;height:44px;border-radius:14px;background:var(--orange-soft);display:grid;place-items:center;font-size:22px;margin-bottom:18px}
     .support{background:var(--ink);color:white;border-radius:28px;padding:34px;margin:8px 0 64px}
-    .support h2{font-size:28px;margin:0 0 10px}
-    .support p{color:#c7d0dc;margin:0 0 20px;max-width:720px}
-    .button{display:inline-flex;align-items:center;justify-content:center;background:var(--orange);color:white;text-decoration:none;border-radius:14px;padding:13px 18px;font-weight:800}
+    .support h2{font-size:28px;margin:0 0 10px}.support p{color:#c7d0dc;margin:0 0 20px;max-width:720px}
+    .button{display:inline-flex;background:var(--orange);color:white;text-decoration:none;border-radius:14px;padding:13px 18px;font-weight:800}
     .note{margin-top:18px;font-size:14px;color:#aeb9c7}
-    footer{border-top:1px solid var(--line);background:white}
-    .foot{min-height:92px;display:flex;align-items:center;justify-content:space-between;gap:16px;color:var(--muted);font-size:14px}
-    .status{display:flex;align-items:center;gap:8px}.dot{width:9px;height:9px;background:var(--success);border-radius:50%}
-    @media(max-width:720px){.grid{grid-template-columns:1fr}.hero{padding-top:48px}.foot{align-items:flex-start;flex-direction:column;justify-content:center;padding:20px 0}.nav a{display:none}}
+    footer{border-top:1px solid var(--line);background:white}.foot{min-height:92px;display:flex;align-items:center;justify-content:space-between;gap:16px;color:var(--muted);font-size:14px}
+    @media(max-width:720px){.grid{grid-template-columns:1fr}.hero{padding-top:48px}.foot{align-items:flex-start;flex-direction:column;justify-content:center;padding:20px 0}nav{gap:12px;font-size:14px}}
   </style>
 </head>
 <body>
-  <header>
-    <div class="wrap nav">
-      <div class="brand"><div class="mark">F</div><span>FinFlex</span></div>
-      <a href="#suporte">Central de suporte</a>
-    </div>
-  </header>
-
-  <main>
-    <section class="wrap hero">
-      <span class="eyebrow">Suporte oficial do aplicativo</span>
-      <h1>Como podemos ajudar?</h1>
-      <p class="lead">Esta é a central de suporte do FinFlex. Consulte as orientações abaixo para acesso ao aplicativo, extrato, movimentações, comprovantes e segurança da conta.</p>
-    </section>
-
-    <section class="wrap grid" aria-label="Tópicos de ajuda">
-      <article class="card">
-        <div class="icon">🔐</div>
-        <h2>Acesso ao FinFlex</h2>
-        <p>Utilize as credenciais fornecidas pela instituição responsável pelo seu cadastro. Em caso de dificuldade de acesso, confirme os dados informados e utilize o canal Atendimento disponível no próprio aplicativo.</p>
-      </article>
-
-      <article class="card">
-        <div class="icon">📊</div>
-        <h2>Saldo, extrato e movimentações</h2>
-        <p>O FinFlex permite consultar saldo, resumo financeiro, histórico e filtros de movimentações. Os dados exibidos correspondem às informações disponibilizadas para a sua conta no sistema.</p>
-      </article>
-
-      <article class="card">
-        <div class="icon">📄</div>
-        <h2>Comprovantes</h2>
-        <p>Na área de comprovantes você pode acompanhar registros enviados e seus respectivos status. Quando habilitado para sua conta, também é possível enviar um novo comprovante diretamente pelo aplicativo.</p>
-      </article>
-
-      <article class="card">
-        <div class="icon">🛡️</div>
-        <h2>Segurança da conta</h2>
-        <p>Não compartilhe sua senha. Quando disponível no dispositivo, o acesso por biometria pode ser ativado pelo perfil. Se identificar qualquer acesso indevido, altere sua senha e procure o atendimento responsável.</p>
-      </article>
-    </section>
-
-    <section id="suporte" class="wrap">
-      <div class="support">
-        <h2>Precisa de atendimento?</h2>
-        <p>Abra o FinFlex e acesse <strong>Atendimento</strong> na tela inicial. Para questões relacionadas ao cadastro, autorização de acesso ou dados da conta, procure também a instituição responsável pelo seu vínculo no FinFlex.</p>
-        <a class="button" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Voltar ao início</a>
-        <div class="note">Página pública de suporte do FinFlex • Dariberg Tecnologia</div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="wrap foot">
-      <span>© 2026 Dariberg Tecnologia. FinFlex.</span>
-      <span class="status"><i class="dot"></i> Central de suporte disponível</span>
-    </div>
-  </footer>
+<header><div class="wrap nav"><div class="brand"><div class="mark">F</div><span>FinFlex</span></div><nav><a href="/">Suporte</a><a href="/privacidade">Privacidade</a></nav></div></header>
+<main>
+  <section class="wrap hero">
+    <span class="eyebrow">Suporte oficial do aplicativo</span>
+    <h1>Como podemos ajudar?</h1>
+    <p class="lead">Esta é a central de suporte do FinFlex. Consulte as orientações abaixo para acesso ao aplicativo, extrato, movimentações, comprovantes e segurança da conta.</p>
+  </section>
+  <section class="wrap grid">
+    <article class="card"><div class="icon">🔐</div><h2>Acesso ao FinFlex</h2><p>Utilize as credenciais fornecidas pela instituição responsável pelo seu cadastro. Em caso de dificuldade de acesso, confirme os dados informados e utilize o canal Atendimento disponível no próprio aplicativo.</p></article>
+    <article class="card"><div class="icon">📊</div><h2>Saldo, extrato e movimentações</h2><p>O FinFlex permite consultar saldo, resumo financeiro, histórico e filtros de movimentações. Os dados exibidos correspondem às informações disponibilizadas para a sua conta no sistema.</p></article>
+    <article class="card"><div class="icon">📄</div><h2>Comprovantes</h2><p>Na área de comprovantes você pode acompanhar registros enviados e seus respectivos status. Quando habilitado para sua conta, também é possível enviar um novo comprovante diretamente pelo aplicativo.</p></article>
+    <article class="card"><div class="icon">🛡️</div><h2>Segurança da conta</h2><p>Não compartilhe sua senha. Quando disponível no dispositivo, o acesso por biometria pode ser ativado pelo perfil. Se identificar qualquer acesso indevido, altere sua senha e procure o atendimento responsável.</p></article>
+  </section>
+  <section class="wrap"><div class="support"><h2>Precisa de atendimento?</h2><p>Abra o FinFlex e acesse <strong>Atendimento</strong> na tela inicial. Para questões relacionadas ao cadastro, autorização de acesso ou dados da conta, procure também a instituição responsável pelo seu vínculo no FinFlex.</p><a class="button" href="/privacidade">Consultar Política de Privacidade</a><div class="note">Página pública de suporte do FinFlex • FinFlex Tec</div></div></section>
+</main>
+<footer><div class="wrap foot"><span>© 2026 FinFlex Tec. FinFlex.</span><span>Central de suporte disponível</span></div></footer>
 </body>
 </html>
